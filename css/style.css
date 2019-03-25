@@ -1,0 +1,580 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:font-family: 'Roboto', sans-serif;
+    background-image: url(../img/fon-sayta.png);
+  /*  scroll-behavior: smooth;*/
+}
+h2 {
+	font-weight: 400;
+	margin: 40px 0 0 0;
+	color:#333;
+	margin:15px 0;
+}
+p{
+	font-size: 20px;
+	font-weight: 400;
+	color: #333;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	color: #feffff;
+}
+
+.d-flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+/*=================================стартовая страница */
+header{
+	background: url(../img/start-fon-bm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+.navbar{
+	display: flex;
+	border-style: none;
+	flex-grow: 0;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: none;
+}
+.lng-btn-long{
+	display: none;
+}
+.nav-item{
+	margin: 5px 0;
+	font-size: 1.2rem;
+
+}
+.navbar-brand{
+	display: inline-block;
+	
+}
+.navbar-brand img{
+	max-width:100%;
+}
+.navbar-collapse{
+	flex-grow: 0;
+}
+.start-page{
+	
+	margin: auto;
+	padding: 0 10%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.start-page h1 {
+	color: white;
+	font-weight: 800;
+	text-transform: uppercase;
+
+}
+.start-page h2{
+	color: white;
+	font-weight: 600;
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+}
+.start-page p {
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+}
+
+/*===========================Страница с информацией*/
+.content{
+	padding: 20px 15px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+	background-color: white;
+}
+
+/*=============about me==============*/
+.about-me{
+	color:#333;
+	
+	margin: 30px 1%;
+	padding: 20px 2%;
+	display: flex;
+	align-items: center;
+	border-top: 1px #dadada solid;
+	border-bottom: 1px #dadada solid;
+	
+}
+.text-about-me{
+	flex-direction: column;	
+	justify-content: space-between;
+	padding: 0 15px;
+}
+.text-about-me h2{
+	margin-bottom: 15px;
+    font-weight: 400;
+    color: #333;
+}
+.text-about-me .btn{
+	align-self: flex-end;
+	margin-top: 10px;
+}
+.photo img{
+	max-width: 250px;
+	margin: 15px;
+
+}
+/*=========================блок с  иконками*/
+.icons{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items:center; 
+	margin-top: 15px 0;
+}
+.icon-block{
+	background: #0d1329;
+	padding: 30px 5px;
+	margin-bottom: 50px;
+	position: relative;
+}
+.icon-block h2{
+	color: white;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+	.icon-block p{
+	color: white;
+	margin:10px auto;
+}
+.icon-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+}
+.icon-item img{
+	width: 80px;
+	height: 80px;
+	margin: 15px,auto;
+}
+.icon-item p{
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+/*====================tehnology and freimworks block*/
+
+.tehnology-block{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 20px 0;
+	margin-bottom: 40px;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.tech{
+	margin: 70px auto;
+}
+.tech h2 {
+	font-weight: 400;
+	margin:70px auto;
+	color:#333;
+}
+.tehnology-item p {
+	margin: 10px 0 0 0;
+	font-weight: 500;
+	color: #333;
+}
+
+.img-tech{
+	height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fraimworks-block{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 20px 0;
+	margin-bottom: 40px;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.fraimwork-item p {
+	margin-top: 10px 0 0 0;
+	font-weight: 500;
+	color: #333;
+}
+/*===============content============*/
+.content{
+	margin: 70px auto;
+}
+/*portfolio*/
+.portfolio{
+	text-align: center;
+	margin: 30px auto;
+	
+}
+.portfolio h2{
+	margin: 40px 0;
+}
+.project-box{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px 15px;
+	justify-items: center; 
+		
+}
+.project-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	border-radius: 5px
+}
+.project-item img{
+	width: 100%;
+	height: 70%;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	border-bottom: 1px #dadada solid;
+}
+
+/*===============================карточки товаров*/
+
+.cards-of-project{
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin: 20px auto;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 0;
+	}
+.card-project{
+	display: block;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin: 10px auto;
+	padding: 15px 10px;
+	width: 25%;
+}
+.img-card img{
+	max-width: 300px;
+	max-height: 200px;
+
+}
+.text-card{
+	width: 82%;
+}
+.text-card h3{
+	font-weight: 500;
+	color: #333;
+}
+.text-card p{
+	color: #333;
+}
+.m-button{
+	background: red;
+	padding: 10px;
+}
+/*contact-form*/
+.contact-form{
+	margin: 70px 0px;
+    text-align: center;
+}
+/*=============================styles of footer here*/
+footer{
+	background: #0d1329;
+}
+.my-footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	padding: 20px 0;
+	margin-top: 40px;
+}
+.footer-item p{
+	color:white;
+
+}
+.footer-item{
+	padding: 5px;
+}
+.social{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	
+
+}
+.social p{
+	grid-column: 1/5;
+}
+.social img{
+	max-width: 40px;
+}
+
+.form{
+	text-align: center;
+	align-self: center;
+}
+.text-card{
+	text-align: left;
+	padding: 2%;
+
+}
+.text-card h3{
+	margin-top: 10%;
+	font-weight: 600;
+	font-size: 22px;
+	color #333;
+}
+
+/*styles jf contact form*/
+#message {
+    
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5
+}
+
+#message h2 {
+    margin-bottom: 30px
+}
+
+#message h2 span {
+    border-bottom: 2px solid #FF6F61;
+}
+
+#message label {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 1.2em
+}
+
+#message #form_email,
+#message #form_message,
+#message #form_name {
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    box-shadow: none;
+    
+}
+
+#message #form_email,
+#message #form_name {
+    padding: 25px;
+    border: 1px solid #ccc;
+    font-size: 1.1em
+}
+
+#message #form_message {
+    height: 249px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    font-size: 1.2em
+}
+
+#message #button_contacts {
+    background: #FF3547;
+    /*padding: 15px 0;*/
+    padding:0.84rem 2.14rem;
+    margin: 0;
+    width: 100%;
+    border:none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    transition: background .6s, color .6s;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+#message #button_contacts:hover {
+    color: #fff
+
+}
+.contact-text{
+	margin: 15px 0;
+	margin: 40px 0px 50px 0px;
+    text-align: center;
+}
+.scrollup{
+width:40px;
+height:40px;
+opacity:0.3;
+position:fixed;
+bottom:50px;
+right:100px;
+display:none;
+text-indent:-9999px;
+background: url('../img/icon_top.png') no-repeat;
+}
+/*=============responsive================*/
+@media screen and (max-width: 1000px ){
+
+/*====about me===========*/
+	.about-me{	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+		
+}
+.lng-btn{
+	display:none;
+}
+.lng-btn-long{
+	display:initial;
+}
+.text-about-me{
+	/*text-align: center;*/
+	
+}
+
+.text-about-me .btn{
+	align-self: center;
+}
+.photo img{
+	max-width: 250px;
+	margin: 15px;
+
+}
+/*============================*/
+/*=======portfolio============*/
+.project-box{
+	grid-template-columns: 1fr;
+	grid-row-gap: 50px
+		
+}
+.project-item{
+	width: 80%;
+}
+/*=============================*/
+
+/*=========footer==============*/
+
+.my-footer{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items:center;
+	padding: 20px 0;
+	margin-top: 40px;
+
+}
+
+.footer-item{
+	padding: 0px;
+	width: 70%;
+}
+.social{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.social p{
+	grid-column: 1/5;
+}
+
+@media screen and (max-width: 500px ){
+/*==========start-page===============*/
+.start-page{
+	
+	padding: 0 10px;
+	height: 90vh;
+	
+}
+.start-page h1 {	
+	font-weight: 600;
+	font-size: 2em;
+}
+.start-page h2{
+	
+	font-weight: 400;
+	font-size: 1.5em;	
+}
+.start-page p {		
+	font-size: 1em;	
+}
+.nav-item{
+	margin: 5px 0;
+	font-size: 1.8rem;
+}
+
+/*===========tehnology=============*/
+
+.tehnology-block{
+
+	grid-template-columns: 1fr 1fr ;
+	grid-row-gap: 30px;
+}
+
+.fraimworks-block{
+	
+	grid-template-columns: 1fr 1fr ;
+	grid-row-gap: 30px;
+}
+
+/*============== process of work==========*/
+.icons{
+
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;	
+}
+.social{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.social p{
+	grid-column: 1/5;
+}
+/*=========================================*/
+}
+/*========for very small device===========*/
+@media screen and (max-width: 400px ){
+	.start-page{	
+	padding: 0 10px;
+	height: 60vh;
+	
+}
+.start-page h2{
+	
+	font-weight: 400;
+	font-size: 1em;
+	border:none; 	
+}
+.start-page p {		
+	display: none;	
+}
+.navbar-brand{
+	max-width: 200px;
+	font-size: 1rem;
+}
+.social{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.social p{
+	grid-column: 1/5;
+}
+}
